@@ -1,0 +1,57 @@
+/* src/pages/AirtimeToCashPage.css */
+
+.airtime-to-cash-page {
+    display: flex;
+  }
+  
+  .airtime-to-cash-page .content {
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+  
+  .airtime-to-cash-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .airtime-to-cash-page form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+  }
+  
+  .airtime-to-cash-page form div {
+    margin-bottom: 15px;
+  }
+  
+  .airtime-to-cash-page form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .airtime-to-cash-page form select,
+  .airtime-to-cash-page form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .airtime-to-cash-page form button[type="submit"] {
+    width: 100%;
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

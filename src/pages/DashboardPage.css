@@ -1,0 +1,41 @@
+/* src/pages/DashboardPage.css */
+
+.dashboard-page {
+    display: flex;
+  }
+  
+  .dashboard-page .content {
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+  
+  .dashboard-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .wallet-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .wallet-info p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .wallet-info button {
+    background-color: #ffcd3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
