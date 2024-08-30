@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import AirtimeToCashPage from './pages/AirtimeToCashPage';
+import HelpAndSupport from './pages/HelpAndSupport';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/airtime-to-cash" element={<AirtimeToCashPage />} />
+        <Route path="/help-and-support" element={<HelpAndSupport />} />
+        
         {/* Add more routes as needed */}
       </Routes>
     </Router>

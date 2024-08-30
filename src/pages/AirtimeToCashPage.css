@@ -1,57 +1,171 @@
-/* src/pages/AirtimeToCashPage.css */
+/* Container for the entire layout */
+.airtime-to-cash-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
 
-.airtime-to-cash-page {
-    display: flex;
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #e6f0fa; /* Light blue background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logoairtime {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.menuairtime {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+}
+
+.menu-item.active {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.logout {
+  margin-top: auto;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px 40px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.profile-icon {
+  font-size: 24px;
+}
+
+/* Form content styling */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form-container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.airtime-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.proceed-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .airtime-to-cash-container {
+    flex-direction: column;
   }
-  
-  .airtime-to-cash-page .content {
-    margin-left: 250px; /* Width of the sidebar */
-    padding: 20px;
-    width: calc(100% - 250px);
-  }
-  
-  .airtime-to-cash-page h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .airtime-to-cash-page form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-  }
-  
-  .airtime-to-cash-page form div {
-    margin-bottom: 15px;
-  }
-  
-  .airtime-to-cash-page form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .airtime-to-cash-page form select,
-  .airtime-to-cash-page form input[type="text"] {
+
+  .sidebarairtime {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    flex-direction: row;
+    overflow-x: auto;
   }
-  
-  .airtime-to-cash-page form button[type="submit"] {
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .form-container {
     width: 100%;
-    background-color: #0084ff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 20px;
   }
-  
+}

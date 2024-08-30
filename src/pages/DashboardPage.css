@@ -1,41 +1,170 @@
-/* src/pages/DashboardPage.css */
+/* Container for the entire layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
 
-.dashboard-page {
-    display: flex;
-  }
+/* Sidebar styling */
+.sidebardash {
+  width: 250px;
+  background-color: #1a2a6c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+}
+
+.menu-item.active {
+  background-color: #112d6a;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.logout {
+  margin-top: auto;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Main content styling */
+.main-contentdash {
+  flex-grow: 1;
+  padding: 20px 40px;
+  background-color: #f7f7f7;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.upgrade-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+/* Content styling */
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.wallet {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wallet-balance {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-balance p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.wallet-balance h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.fund-wallet {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.no-cards {
   
-  .dashboard-page .content {
-    margin-left: 250px; /* Width of the sidebar */
-    padding: 20px;
-    width: calc(100% - 250px);
-  }
-  
-  .dashboard-page h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .wallet-info {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .wallet-info p {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .wallet-info button {
-    background-color: #ffcd3c;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.no-cards .placeholder-image {
+
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Referral and referral stats */
+.referral, .referral-stats {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.referral-actions, .cashout-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.referral-btn, .cashout-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

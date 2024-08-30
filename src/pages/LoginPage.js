@@ -1,50 +1,49 @@
-// src/pages/LoginPage.js
 import React from 'react';
-import './LoginPage.css'
+import { Link } from 'react-router-dom';
+import './LoginPage.css';
 
 const LoginPage = () => {
   return (
-    
-    <div className="login-container">
-      <div className="login-header">
-      
-      <a href="https://www.google.com">Sign Up</a>
-        <a href="https://www.google.com">Home</a>
-      </div>
+    <div className="container">
       <div className="sidebar">
         <div className="logo">subsum</div>
-        <ul>
-          <li>Dashboard</li>
-          <li>Buy Airtime</li>
-          <li>Buy Data</li>
-          <li>TV Subscription</li>
-          <li>Pay Electric Bill</li>
-          <li>Transaction History</li>
-          <li>Help & Support</li>
+        <ul className="menu">
+          <li className="menu-item active" ><Link to="/dashboard">Dashboard</Link></li> 
+          <li className="menu-item"><Link to="/airtime-to-cash">Buy Airtime</Link></li>
+          <li className="menu-item">Buy Data</li>
+          <li className="menu-item">TV Subscription</li>
+          <li className="menu-item">Pay Electric Bill</li>
+          <li className="menu-item"><Link to="/transactionhistory">Transaction History</Link></li>
+          <li className="menu-item"><Link to="/help-and-support">Help & Support</Link></li>
         </ul>
-        <p>The BEST place to subscribe / buy</p>
+        <div className="footer">The BEST place to subscribe / buy</div>
       </div>
       <div className="main-content">
-        <h2>Login</h2>
-        <div className="login-options">
-          <button className="google-login">
-            <img src="path/to/google-logo.png" alt="Google Logo" />
-            Login with Google
-          </button>
-          <p>Or continue with</p>
+        <div className="navbar">
+          <button className="home-button">&lt; Home</button>
+          <button className="signup-button">Sign Up</button>
         </div>
-        <form>
-          <label htmlFor="email">Email Address</label>
-          <input type="email" id="email" placeholder="wabdotmail@gmail.com" />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" placeholder="Gabon4351" />
-          <div className="remember-password">
-            <input type="checkbox" id="remember-me" />
-            <label htmlFor="remember-me">Remember me</label>
-            <a href="www.g.com">Recover Password</a>
-          </div>
-          <button type="submit">Log in</button>
-        </form>
+        <div className="login-form">
+          <h2>Login</h2>
+          <button className="google-login">Login with Google</button>
+          <div className="separator">or continue with</div>
+          <form>
+            <div className="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="webdtmail@gmail.com" />
+            </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" placeholder="Gaboon4351" />
+            </div>
+            <div className="form-group">
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember me</label>
+              <a href="www.g.com" className="recover-password">Recover Password</a>
+            </div>
+            <button className="login-button">Log in</button>
+          </form>
+        </div>
       </div>
     </div>
   );
