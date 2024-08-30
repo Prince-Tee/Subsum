@@ -1,13 +1,16 @@
 // src/pages/LoginPage.js
 import React from 'react';
-import Navbar from '../components/Navbar';
 import './LoginPage.css'
 
 const LoginPage = () => {
   return (
     
     <div className="login-container">
-        <Navbar />
+      <div className="login-header">
+      
+      <a href="https://www.google.com">Sign Up</a>
+        <a href="https://www.google.com">Home</a>
+      </div>
       <div className="sidebar">
         <div className="logo">subsum</div>
         <ul>
@@ -38,7 +41,7 @@ const LoginPage = () => {
           <div className="remember-password">
             <input type="checkbox" id="remember-me" />
             <label htmlFor="remember-me">Remember me</label>
-            <a href="www.the.com">Recover Password</a>
+            <a href="www.g.com">Recover Password</a>
           </div>
           <button type="submit">Log in</button>
         </form>
