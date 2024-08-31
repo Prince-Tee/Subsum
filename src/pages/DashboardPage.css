@@ -1,6 +1,7 @@
 /* Container for the entire layout */
 .dashboard-container {
   display: flex;
+  flex-direction: row; /* Default layout for larger screens */
   height: 100vh;
   font-family: 'Arial', sans-serif;
 }
@@ -8,7 +9,7 @@
 /* Sidebar styling */
 .sidebardash {
   width: 250px;
-  background-color: #1a2a6c;
+  background-color: #EFF3FB;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -61,37 +62,56 @@
 }
 
 /* Navbar styling */
+/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
+  align-items: flex-start; /* Aligns all items to the top */
+  margin-bottom: 10px;
+  padding: 10px 0; /* Optional: add padding for better spacing */
 }
 
 .navbar h2 {
   font-size: 24px;
   margin: 0;
+  align-self: flex-start; /* Aligns the heading to the left */
 }
 
-.upgrade-button {
-  background-color: #007bff;
-  color: #fff;
+.navbar-right {
+  display: flex;
+  align-items: right; /* Aligns items within the right section to the top */
+}
+
+.upgrade-buttonn {
+  
+  color: #007bff;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 10px; /* Adds some space between elements */
 }
 
-.profile-icon {
+.profile-icon,
+.alarm-icon {
   font-size: 24px;
-  margin-left: 20px;
+  margin-left: 10px; /* Adds space between icons */
 }
+
 
 /* Content styling */
 .content {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
+}
+
+.content2{
+ 
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
 }
 
 .wallet {
@@ -103,12 +123,14 @@
 
 .wallet-balance {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+  
 }
 
 .wallet-balance p {
@@ -130,28 +152,14 @@
   cursor: pointer;
 }
 
-.no-cards {
-  
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.no-cards .placeholder-image {
-
-  width: 100%;
-  height: 150px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
 
 /* Referral and referral stats */
 .referral, .referral-stats {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .referral-actions, .cashout-btn {
@@ -167,4 +175,51 @@
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Stack sidebar on top for smaller screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar h2 {
+    margin-bottom: 20px;
+  }
+
+  .profile-icon, .alarm-icon, .upgrade-button {
+    margin-left: 0; /* Align icons and button vertically */
+  }
+
+  .navbar .profile-icon {
+    order: 2; /* Move profile icon below the button */
+  }
+
+  .navbar .alarm-icon {
+    order: 1; /* Move alarm icon below the button */
+  }
+
+  .navbar .upgrade-button {
+    order: 0; /* Keep the button at the top */
+    align-self: flex-end; /* Align button to the right */
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: stretch; /* Full width for each item */
+  }
+
+  .wallet, .referral, .referral-stats {
+    width: 100%;
+  }
+
+  .background-image {
+    width: 100%; /* Ensure the background image is full width */
+    margin-top: 20px;
+  }
 }

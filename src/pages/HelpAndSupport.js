@@ -5,7 +5,7 @@ const HelpAndSupport = () => {
   return (
     <div className="help-and-support-container">
       <div className="sidebar">
-        <div className="logo">subssum</div>
+        <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
         <ul>
           <li>Dashboard</li>
           <li>Buy Airtime</li>

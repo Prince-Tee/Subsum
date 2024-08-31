@@ -1,11 +1,11 @@
 import React from 'react';
-import './UserProfile.css'; // Import your CSS file
+import './UserProfile.css';
 
 const UserProfile = () => {
   return (
     <div className="user-profile-container">
       <div className="sidebar">
-        <div className="logo">subssum</div>
+        <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
         <ul>
           <li>Dashboard</li>
           <li>Buy Airtime</li>

@@ -5,7 +5,7 @@ const AirtimeToCashPage = () => {
   return (
     <div className="airtime-to-cash-container">
       <div className="sidebaraitime">
-        <div className="logo">subssum</div>
+        <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
         <ul className="menu">
           <li className="menu-item">
             <span className="icon">📊</span> Dashboard
