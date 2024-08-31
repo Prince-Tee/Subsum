@@ -1,65 +1,175 @@
+/* HelpAndSupport.css */
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Container */
 .help-and-support-container {
-    display: flex;
-    min-height: 100vh;
-  }
+  display: flex;
+}
+
+/* Sidebar */
+.sidebarhs {
+  width: 250px;
+  background-color:#EFF3FB;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.log-out-button {
+  margin-top: auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-rightt {
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.alarm-icon,
+.profile-icon {
+  font-size: 24px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+
+.support-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   
+}
+
+.support-option {
+  flex: 1 1 calc(50% - 15px);
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-align: right;
+}
+
+.support-option:hover {
+  transform: translateY(-5px);
+}
+
+.support-option i {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.support-option h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.support-option p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #888;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .help-and-support-container {
+    flex-direction: column;
+  }
+
   .sidebar {
-    width: 250px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-right: 1px solid #ccc;
+    width: 100%;
+    padding: 15px;
   }
-  
-  .sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar ul li.active {
-    background-color: #f2f2f2;
-    padding-left: 10px;
-  }
-  
-  .sidebar button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+
   .main-content {
-    flex: 1;
-    padding: 20px;
+    padding: 15px;
   }
-  
+
   .support-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    flex-direction: column;
   }
-  
+
   .support-option {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    flex: 1 1 100%;
   }
-  
-  .support-option i {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* ... add more CSS styles as needed */
+}
