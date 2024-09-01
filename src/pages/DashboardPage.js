@@ -6,18 +6,18 @@ const DashboardPage = () => {
   return (
     <div className="dashboard-container">
       <div className="sidebardash">
-        <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
+        <div className="logo"> <Link to="/"><img src="/images/logosub.jpg" alt="logo" /></Link></div>
         <ul className="menu">
           <li className="menu-item active">
-            <span className="icon">📊</span> Dashboard
+            <span className="icon">📊</span> <Link to="/dashboard"> Dashboard </Link>
           </li>
-          <li className="menu-item"><span className="icon">📞</span> Buy Airtime ▼</li>
+          <li className="menu-item"><span className="icon">📞</span> <Link to="/airtime-to-cash">Buy Airtime ▼ </Link> </li>
           <li className="menu-item"><span className="icon">📡</span> Buy Data ▼</li>
           <li className="menu-item"><span className="icon">📺</span> TV Subscription ▼</li>
           <li className="menu-item"><span className="icon">⚡</span> Pay Electric Bill ▼</li>
-          <li className="menu-item"><span className="icon">💵</span> Airtime to Cash </li>
-          <li className="menu-item"><span className="icon">📑</span> Transaction History</li>
-          <li className="menu-item"><span className="icon">🎧</span> Help & Support</li>
+          <li className="menu-item"><span className="icon">💵</span> <Link to="/airtime-to-cash">Airtime to Cash </Link> </li>
+          <li className="menu-item"><span className="icon">📑</span> <Link to="/transactionhistory">Transaction History </Link></li>
+          <li className="menu-item"><span className="icon">🎧</span> <Link to="/help-and-support">Help & Support </Link></li>
         </ul>
         <div className="logout">Log Out ▼</div>
       </div>

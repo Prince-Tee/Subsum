@@ -1,84 +1,168 @@
 .user-profile-container {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  .sidebar {
-    width: 250px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-right: 1px solid #ccc;
-  }
-  
-  .sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .profile-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-  }
-  
-  .profile-image label {
-    display: block;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .profile-image input {
-    display: none;
-  }
-  
-  .profile-details {
-    background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.sidebaruser {
+  width: 250px;
+  padding: 20px;
+  background-color: #EFF3FB;
+  border-right: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item.active {
+  background-color: #e4e7ed;
+  font-weight: bold;
+}
+
+.logout {
+  margin-top: 20px;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: blue;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  flex: 1;
   padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-buttonuser {
+  
+  color: blue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.alarm-icon,
+.profile-icon {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ddd;
   border-radius: 8px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
-  }
-  
-  .change-password-section {
-    margin-top: 20px;
-  }
-  
-  .change-password-section form {
-    margin-top: 20px;
-  }
-  
-  /* Add more CSS styles as needed */
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.profile-image label {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.profile-image input {
+  display: none;
+}
+
+.profile-details {
+  padding-left: 20px;
+}
+
+.profile-details p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.change-password-section {
+  flex-basis: 50%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.change-password-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-password-section label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.change-password-section input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.change-password-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

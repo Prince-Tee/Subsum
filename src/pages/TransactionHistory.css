@@ -1,73 +1,112 @@
 .transaction-history-container {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.sidebardash {
+  width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+.transaction-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transaction-nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.upgrade-buttonuser {
+  margin-right: 15px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.alarm-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  cursor: pointer;
+}
+
+.transaction-filter-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transaction-filter-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.transaction-filter-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #f4f4f9;
+}
+
+.transaction-action-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .transaction-history-container {
+      flex-direction: column;
   }
-  
-  .sidebar {
-    width: 250px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-right: 1px solid #ccc;
+
+  .transaction-main-content {
+      margin-left: 0;
   }
-  
-  .sidebar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+  .transaction-filter-section {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
+
+  .transaction-filter-input, .transaction-filter-button {
+      margin-bottom: 10px;
   }
-  
-  .sidebar ul li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .filter-section {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-  }
-  
-  .filter-section input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .filter-section button {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  /* Add more CSS styles as needed */
+}

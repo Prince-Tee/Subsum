@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className="container">
       <div className="sidebar1">
         <div className='whiteback'>
-          <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
+          <div className="logo"><Link to="/"><img src="/images/logosub.jpg" alt="logo" /> </Link></div>
           <ul className="menu">
             <li className="menu-item active"> <span className="icon">📊</span> <Link to="/dashboard">Dashboard  ▼</Link></li>
             <li className="menu-item"><span className="icon">📞</span><Link to="/airtime-to-cash">Buy Airtime ▼</Link></li>

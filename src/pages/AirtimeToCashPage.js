@@ -1,5 +1,6 @@
 import React from 'react';
 import './AirtimeToCashPage.css';
+import { Link } from 'react-router-dom'
 
 const AirtimeToCashPage = () => {
   return (
@@ -8,38 +9,42 @@ const AirtimeToCashPage = () => {
         <div className="logo"><img src="/images/logosub.jpg" alt="logo" /></div>
         <ul className="menu">
           <li className="menu-item">
-            <span className="icon">📊</span> Dashboard
+            <span className="icon">📊</span> <Link to="/dashboard">Dashboard ▼ </Link>
           </li>
           <li className="menu-item">
-            <span className="icon">📞</span> Buy Airtime
+            <span className="icon">📞</span> <Link to="/airtime-to-cash"> Buy Airtime ▼ </Link>
           </li>
           <li className="menu-item">
-            <span className="icon">📡</span> Buy Data
+            <span className="icon">📡</span> Buy Data ▼
           </li>
           <li className="menu-item">
-            <span className="icon">📺</span> TV Subscription
+            <span className="icon">📺</span> TV Subscription ▼
           </li>
           <li className="menu-item">
-            <span className="icon">⚡</span> Pay Electric Bill
+            <span className="icon">⚡</span> Pay Electric Bill ▼
           </li>
           <li className="menu-item active">
-            <span className="icon">↔️</span> Airtime to Cash
+            <span className="icon">↔️</span><Link to="/airtime-to-cash"> Airtime to Cash ▼ </Link>
           </li>
           <li className="menu-item">
-            <span className="icon">📑</span> Transaction History
+            <span className="icon">📑</span> <Link to="/transactionhistory">ransaction History ▼ </Link>
           </li>
           <li className="menu-item">
-            <span className="icon">🎧</span> Help & Support
+            <span className="icon">🎧</span> <Link to="/help-and-support">Help & Support ▼</Link> 
           </li>
         </ul>
-        <div className="logout">Log Out</div>
+        <div className="logout">Log Out ▼</div>
       </div>
-      <div className="main-content">
+      <div className="main-content5">
         <div className="navbar">
           <h2>Airtime to Cash</h2>
           <div className="navbar-actions">
-            <button className="upgrade-button">Upgrade To Merchant</button>
-            <div className="profile-icon">👤</div>
+          <p className="upgrade-buttonn"> Upgrade To Merchant</p>
+          <div className="alarm-icon">🔔</div>
+          <div className="profile-icon">
+            <Link to="/userprofile">👤</Link>
+          </div>
+            
           </div>
         </div>
         <div className="content">

@@ -7,9 +7,9 @@
 }
 
 /* Sidebar styling */
-.sidebar {
+.sidebaraitime{
   width: 250px;
-  background-color: #e6f0fa; /* Light blue background */
+  background-color:#EFF3FB;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
 }
 
 .menu-item.active {
-  background-color: #fff;
+  background-color: blue;
   padding: 10px;
   border-radius: 8px;
 }
@@ -57,7 +57,7 @@
 }
 
 /* Main content styling */
-.main-content {
+.main-content5 {
   flex-grow: 1;
   padding: 20px 40px;
 }
@@ -67,12 +67,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .navbar h2 {
   font-size: 24px;
-  margin: 0;
+  align-items: left;
 }
 
 .navbar-actions {
